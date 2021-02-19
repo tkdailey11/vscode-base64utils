@@ -1,6 +1,6 @@
 {
-  "name": "testext",
-  "displayName": "testExt",
+  "name": "vscode-base64utils",
+  "displayName": "Base64 Utilities",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -37,18 +37,18 @@
       ]
     },
     "configuration": {
-      "title": "Base64 Configuration",
+      "title": "Base64 Utilities",
       "properties": {
-              "Base64.showInformation": {
-                      "type": "boolean",
-                      "default": true,
-                      "description": "Show encoded/decoded strings as popup information messages."
-              },
-              "Base64.inPlace": {
-                "type": "boolean",
-                "default": false,
-                "description": "Perform base64 encoding and decoding in place."
-              }
+        "Base64.showInformation": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show encoded/decoded strings as popup information messages."
+        },
+        "Base64.inPlace": {
+          "type": "boolean",
+          "default": false,
+          "description": "Perform base64 encoding and decoding in place."
+        }
       }
     }
   },
