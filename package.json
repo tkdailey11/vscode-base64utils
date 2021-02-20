@@ -1,6 +1,11 @@
 {
   "name": "vscode-base64utils",
   "displayName": "Base64 Utilities",
+  "publisher": "TylerDailey",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tkdailey11/vscode-base64utils.git"
+  },
   "description": "",
   "version": "1.0.0",
   "engines": {
@@ -28,11 +33,13 @@
       "editor/context": [
         {
           "command": "extension.b64encode",
-          "when": "editorHasSelection"
+          "when": "editorHasSelection",
+          "group": "myGroup"
         },
         {
           "command": "extension.b64decode",
-          "when": "editorHasSelection"
+          "when": "editorHasSelection",
+          "group": "myGroup"
         }
       ]
     },
@@ -50,7 +57,23 @@
           "description": "Perform base64 encoding and decoding in place."
         }
       }
-    }
+    },
+    "keybindings": [
+      {
+        "command": "extension.b64encode",
+        "key": "ctrl+k ctrl+e",
+        "linux": "ctrl+k ctrl+e",
+        "mac": "cmd+k cmd+e",
+        "when": "editorHasSelection"
+      },
+      {
+        "command": "extension.b64decode",
+        "key": "ctrl+k ctrl+d",
+        "linux": "ctrl+k ctrl+d",
+        "mac": "cmd+k cmd+d",
+        "when": "editorHasSelection"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
