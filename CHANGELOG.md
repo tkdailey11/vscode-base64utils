@@ -5,4 +5,5 @@
 ## [Released]
 
 - Initial release
-- Updated README to show valid images
+- Updated README to show valid images, and refactored right-click menu options.
+Fixed a couple of typos in the documentation.
