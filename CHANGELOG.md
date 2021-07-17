@@ -5,3 +5,4 @@
 ## [Unreleased]
 
 - Initial release
+- Updated README to show valid images

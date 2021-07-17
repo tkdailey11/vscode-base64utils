@@ -6,8 +6,8 @@
     "type": "git",
     "url": "git://github.com/tkdailey11/vscode-base64utils.git"
   },
-  "description": "",
-  "version": "1.0.0",
+  "description": "Adds right click options that allow you to select text, right-click it, and then either base64 encode or decode it.",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -32,17 +32,29 @@
     "menus": {
       "editor/context": [
         {
+          "submenu": "vscode-base64utils",
+          "group": "navigation"
+        }
+      ],
+      "vscode-base64utils": [
+        {
           "command": "extension.b64encode",
           "when": "editorHasSelection",
-          "group": "myGroup"
+          "group": "vscode-base64utils"
         },
         {
           "command": "extension.b64decode",
           "when": "editorHasSelection",
-          "group": "myGroup"
+          "group": "vscode-base64utils"
         }
       ]
     },
+    "submenus": [
+      {
+        "id": "vscode-base64utils",
+        "label": "Base64 Utils"
+      }
+    ],
     "configuration": {
       "title": "Base64 Utilities",
       "properties": {

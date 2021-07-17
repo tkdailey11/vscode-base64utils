@@ -4,9 +4,7 @@
 
 Adds right click options that allow you to select text, right-click it, and then either base64 encode or decode it.
 
-![Right-click menu](images/menu.png)
-
-![Info Message](images/infoMsg.png)
+![Right-click Menu](images/infoMsg.gif)
 
 ## Extension Settings
 
@@ -21,6 +19,6 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-#### 1.0.0
+#### 1.0.1
 
-Initial release
+Updated README to show valid images, and refactored right-click menu options.
