@@ -1,5 +1,7 @@
 node_modules
+dist
 build
 npm-debug.log
+*.vsix
 .env
 .DS_Store

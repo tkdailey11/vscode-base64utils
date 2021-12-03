@@ -23,3 +23,7 @@ This extension contributes the following settings:
 
 Updated README to show valid images, and refactored right-click menu options.
 Fixed a couple of typos in the documentation.
+
+#### 1.1.0
+
+Add URL-Safe encoding and decoding options.
