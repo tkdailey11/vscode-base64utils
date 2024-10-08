@@ -10,7 +10,10 @@ let UrlDecodeCommand = commands.registerCommand('extension.b64urldecode', functi
     var text = editor.document.getText(selection);
     
     var decoded = Buffer.from(text, 'base64').toString();
-    
+    decoded = decoded.replace(/-/g, '+').replace(/_/g, '/');
+    const padding = decoded.length % 4 === 0 ? '' : '='.repeat(4 - (decoded.length % 4));
+    decoded = decoded + padding;
+
     var cfg = workspace.getConfiguration('Base64')
     var showInfo = cfg.get('showInformation')
     var inPlace = cfg.get('inPlace')

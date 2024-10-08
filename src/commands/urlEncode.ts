@@ -9,6 +9,7 @@ let UrlEncodeCommand = commands.registerCommand('extension.b64urlencode', functi
     var selection = editor.selection;
     var text = editor.document.getText(selection);
     var encoded = Buffer.from(text).toString('base64');
+    encoded = encoded.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 
     var cfg = workspace.getConfiguration('Base64')
     var showInfo = cfg.get('showInformation')
